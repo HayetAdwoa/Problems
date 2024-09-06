@@ -1,0 +1,7 @@
+class Solution:
+    def reverseString(self,s):
+      p=-1
+      length=len(s)//2
+      for i in range(0,length):
+          s[i],s[p]=s[p],s[i]
+          p-=1
