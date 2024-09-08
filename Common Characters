@@ -1,0 +1,12 @@
+class Solution(object):
+    def commonChars(self, words):
+        first =list(words[0])
+        for word in words[1:]:
+            x=[]
+            for char in first: 
+                if char in word:
+                    x.append(char)
+                    word =word.replace(char,'',1)
+            first=x
+        return first
+        
