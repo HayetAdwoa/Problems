@@ -1,0 +1,9 @@
+class Solution(object):
+    def sortPeople(self, names, heights):
+        for i in range (0,len(names)):
+            tallest_index= i
+            for j in range (i,len(names)):
+                if heights [j] > heights[tallest_index]:
+                    tallest_index = j
+            names[i], names[tallest_index]  = names[tallest_index], names[i]
+        return names
