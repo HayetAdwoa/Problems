@@ -1,0 +1,11 @@
+s = 'Hello World'
+swapped_chars = []  # To collect swapped characters
+
+for char in s:
+    if char.islower():
+        swapped_chars.append(char.upper())  # Swap lowercase to uppercase
+    else:
+        swapped_chars.append(char.lower())  # Swap uppercase to lowercase
+
+s = "".join(swapped_chars)  # Join the swapped characters to form a new string
+print(s)
