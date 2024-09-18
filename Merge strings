@@ -1,0 +1,14 @@
+class Solution(object):
+    def mergeAlternately(self, word1, word2):
+        word1 = list(word1)
+        word2 = list(word2)
+        word = []
+        size = min(len(word1),len(word2))
+        for i in range(0,size):
+            word.append(word1[i])
+            word.append(word2[i])
+        if len (word1) > size:
+            word.extend(word1[size:])
+        elif len(word2) > size:
+            word.extend(word2[size:])
+        return ''.join(word)
