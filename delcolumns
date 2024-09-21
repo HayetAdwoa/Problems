@@ -1,0 +1,11 @@
+class Solution(object):
+    def minDeletionSize(self, strs):
+        matrix = [list(word)for word in strs]
+        del_= 0
+        for i in range(0,len(strs[0])):
+            for j in range (0,len(matrix)-1):
+                if matrix[j][i]> matrix[j+1][i]:
+                    del_+=1
+                    break
+
+        return del_
