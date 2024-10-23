@@ -1,0 +1,1 @@
+This is all about me solving numerous Data Structures and algorithm questions from leetcode, hackerrank etc just because i find satisfaction in thinking long and hard about difficult word problems. Also i really want to understand why i am coding so yeah..
